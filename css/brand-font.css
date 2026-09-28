@@ -1,0 +1,21 @@
+/* ==========================================================================
+   APK Protocol — the GTE headline face.
+
+   Not shipped here: it is licensed, so the site falls back to Figtree, the
+   closest free geometric grotesk. To switch to the real type, drop the two
+   woff2 files into assets/fonts/ and uncomment the <link> to this file in
+   index.html. Nothing else changes — every headline already asks for
+   "APK Protocol" first through --font-headline.
+   ========================================================================== */
+@font-face{
+  font-family:"APK Protocol";
+  src:local("APK Protocol SemiBold"),
+      url("../assets/fonts/APKProtocol-SemiBold.woff2") format("woff2");
+  font-weight:600;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:"APK Protocol";
+  src:local("APK Protocol Medium"),
+      url("../assets/fonts/APKProtocol-Medium.woff2") format("woff2");
+  font-weight:500;font-style:normal;font-display:swap;
+}

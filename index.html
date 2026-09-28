@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTE Edge — Intelligent trading platform built on your own book</title>
+<meta name="description" content="GTE Edge tracks markets, headlines, and every trade you've made, and answers from all three at once.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/svg/edge-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Brand headline face: add the licensed woff2 files to assets/fonts/ and
+     uncomment the next line. See css/brand-font.css. -->
+<!-- <link rel="stylesheet" href="css/brand-font.css"> -->
+<link rel="stylesheet" href="css/styles.css?v=27">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" aria-label="GTE home">
+    <img src="assets/svg/logo-gte.svg" alt="GTE" width="64" height="24">
+  </a>
+  <a class="btn btn--orange" href="#waitlist">Join Waitlist</a>
+</header>
+
+<main id="top">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <video class="hero__plate" autoplay muted playsinline preload="auto" aria-hidden="true">
+      <source src="assets/video/silhouette-reveal.mp4" type="video/mp4">
+    </video>
+    <!-- only fetched if the video cannot play; see heroIntro() in js/app.js -->
+    <img class="hero__plate hero__plate--fallback" data-src="assets/img/hero-plate.jpg" alt="" aria-hidden="true">
+    <div class="hero__streaks" aria-hidden="true"></div>
+    <div class="hero__vignette" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+  </div>
+
+  <div class="frame">
+    <div class="hero__head">
+      <div class="hero__copy">
+        <h1 class="h3 hero__title reveal" data-scramble>Find your edge</h1>
+        <p class="b1 hero__sub reveal" data-delay="1">
+          An intelligent platform tuned to how you trade.<br>
+          <span class="dim">Filter noise. Unify capital. And scale your edge.</span>
+        </p>
+      </div>
+
+      <div class="hero__form reveal" data-delay="2">
+        <p class="m1 hero__count">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="hi" data-count="227024" data-waitlist-count>227 024</span> traders <span class="dim">on waitlist</span>
+        </p>
+        <form class="field" data-waitlist novalidate>
+          <input type="email" name="email" placeholder="you@email.com" autocomplete="email" required aria-label="Email address">
+          <button class="btn btn--orange" type="submit">Send code</button>
+        </form>
+        <p class="field__msg" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tickerbar" data-ticker>
+    <div class="tickerbar__track"></div>
+  </div>
+</section>
+
+<!-- ============================ EDGE ============================= -->
+<section class="edgesec">
+  <div class="edgesec__head">
+    <div class="edgesec__eyebrow reveal">
+      <span class="m1 dim">Introducing</span>
+      <img src="assets/svg/edge-e.svg" alt="" width="22" height="15" aria-hidden="true">
+      <span class="m1 orange">EDGE</span>
+    </div>
+    <h2 class="h4 edgesec__title reveal" data-delay="1" data-scramble>
+      Trading intelligence<br><span class="dim-3">built on your own book.</span>
+    </h2>
+  </div>
+
+  <div class="edgesec__rows">
+    <div class="edgerow" data-edge-row>
+      <div class="edgerow__bar"><span class="pill pill--grey">Contextual research</span></div>
+      <div class="edgerow__body reveal">
+        <svg class="edgerow__viz" viewBox="0 0 138.141 130.359" fill="none" aria-hidden="true">
+          <path d="M20.903 123.669V98.0957" style="--i:0"/>
+          <path d="M4.33663 130.358V107.709" style="--i:1"/>
+          <path d="M37.0354 86.943V115.614" style="--i:2"/>
+          <path d="M37.0354 30.2815V72.7061" style="--i:3"/>
+          <path d="M53.1546 99.4944V10.5686" style="--i:4"/>
+          <path d="M69.287 26.1083V2.33115" style="--i:5"/>
+          <path d="M69.287 103.386V79.6088" style="--i:6"/>
+          <path d="M85.4193 21.7947V0" style="--i:7"/>
+          <path d="M85.4193 105.716V83.9213" style="--i:8"/>
+          <path d="M101.552 26.5153V2.71336" style="--i:9"/>
+          <path d="M101.552 103.001V79.1995" style="--i:10"/>
+          <path d="M117.684 94.2292V11.4863" style="--i:11"/>
+          <path d="M133.804 72.7081V33.0093" style="--i:12"/>
+        </svg>
+        <p class="edgerow__text"><b>Isolate the signal.</b> <span class="alloy">EDGE filters 24/7 noise by isolating the exact macro headline, filing, or counterparty flow driving price action and plotting it directly to your chart. It surfaces position-aware context to augment your judgment, without ever taking agency or trading for you.</span></p>
+      </div>
+    </div>
+    <div class="edgerow" data-edge-row>
+      <div class="edgerow__bar"><span class="pill pill--white">Ontological memory</span></div>
+      <div class="edgerow__body reveal">
+        <svg class="edgerow__viz" viewBox="0 0 137.718 120.323" fill="none" aria-hidden="true">
+          <path d="M4.33663 77.8494V55.0263" style="--i:0"/>
+          <path d="M20.469 99.0629V33.8152" style="--i:1"/>
+          <path d="M36.6013 58.9219V7.78492" style="--i:2"/>
+          <path d="M36.6013 111.662V72.3846" style="--i:3"/>
+          <path d="M52.7336 118.269V94.4917" style="--i:4"/>
+          <path d="M52.7336 38.386V14.6089" style="--i:5"/>
+          <path d="M68.8534 120.323V98.8007" style="--i:6"/>
+          <path d="M68.8534 36.6044V0" style="--i:7"/>
+          <path d="M84.9857 118.267V94.5025" style="--i:8"/>
+          <path d="M84.9857 38.3736V14.6089" style="--i:9"/>
+          <path d="M101.117 59.0667V7.78492" style="--i:10"/>
+          <path d="M101.117 111.662V72.3846" style="--i:11"/>
+          <path d="M117.25 99.0489V33.826" style="--i:12"/>
+          <path d="M133.382 77.8129V55.0641" style="--i:13"/>
+        </svg>
+        <p class="edgerow__text"><b>Map your true edge.</b> <span class="alloy">EDGE logs every fill, stop, cancel, and slippage baseline across every venue. It tracks exactly where your setups work and where you get chopped up, replacing generic AI amnesia with a strict programmatic ledger of your exact history.</span></p>
+      </div>
+    </div>
+    <div class="edgerow" data-edge-row>
+      <div class="edgerow__bar"><span class="pill pill--grey">Recursive learning</span></div>
+      <div class="edgerow__body reveal">
+        <svg class="edgerow__viz" viewBox="0 0 137.706 135.49" fill="none" aria-hidden="true">
+          <path d="M4.33663 65.1736V61.4194" style="--i:0"/>
+          <path d="M4.33663 135.488V131.734" style="--i:1"/>
+          <path d="M20.4681 65.1736V45.287" style="--i:2"/>
+          <path d="M20.4681 135.488V115.602" style="--i:3"/>
+          <path d="M36.5887 65.174V29.1799" style="--i:4"/>
+          <path d="M36.5887 135.489V99.4948" style="--i:5"/>
+          <path d="M52.721 65.1721V13.0458" style="--i:6"/>
+          <path d="M52.721 135.487V83.3606" style="--i:7"/>
+          <path d="M68.8534 65.1734V0" style="--i:8"/>
+          <path d="M68.8534 135.488V72.6568" style="--i:9"/>
+          <path d="M84.9857 135.488V83.0145" style="--i:10"/>
+          <path d="M84.9857 65.1729V12.6996" style="--i:11"/>
+          <path d="M101.118 135.488V99.1468" style="--i:12"/>
+          <path d="M101.118 65.1729V28.832" style="--i:13"/>
+          <path d="M117.238 135.488V115.267" style="--i:14"/>
+          <path d="M117.238 65.1728V44.9517" style="--i:15"/>
+          <path d="M133.369 135.489V131.401" style="--i:16"/>
+          <path d="M133.369 65.1746V61.0858" style="--i:17"/>
+        </svg>
+        <p class="edgerow__text"><b>Refine your strategy.</b> <span class="alloy">Every trade tightens your personal risk model. EDGE weighs new setups against your historical fills to flag unforced errors and negative-EV decisions, actively compounding your execution logic.</span></p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================ INTRO ============================ -->
+<section class="intro">
+  <h2 class="h4 intro__title reveal" data-scramble>
+    Map the market<br><span class="dim-3">directly to your position.</span>
+  </h2>
+</section>
+
+<!-- ===================== AI FEATURES (pinned) ===================== -->
+<section class="scrollsec" id="ai-features">
+  <div class="scrollsec__track" data-scrollsec>
+    <div class="scrollsec__pin">
+
+      <aside class="scrollsec__side" role="tablist" aria-label="AI features">
+        <button class="tab is-open" type="button" role="tab" aria-selected="true" data-tab="0">
+          <span class="tab__label">Get instant context.</span>
+          <span class="tab__body">
+            <span class="tab__head">
+              <span class="pill pill--white">01</span>
+              <span class="tab__copy"><span class="hi">Get instant context.</span><br>Ask EDGE to isolate the exact headline that drove price action and map it directly to your timeline.</span>
+            </span>
+            <span class="tab__prompt">
+              <span class="m1 dim">Prompt:</span>
+              <span class="prompt">Map <span class="pale">CRUDE</span> catalysts over the past 72 hours directly onto the chart. Filter for <span class="blue">VERIFIED DESKS</span> and EIA releases. Flag any headline that coincided with my open entries or stops.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="tab" type="button" role="tab" aria-selected="false" data-tab="1">
+          <span class="tab__label">Layer your market data.</span>
+          <span class="tab__body">
+            <span class="tab__head">
+              <span class="pill pill--white">02</span>
+              <span class="tab__copy"><span class="hi">Layer your market data.</span><br>Put volume, depth and trade frequency on the same timeline as the price you are reading.</span>
+            </span>
+            <span class="tab__prompt">
+              <span class="m1 dim">Prompt:</span>
+              <span class="prompt">Combine the price chart with the <span class="pale">TRADING VOLUME</span> and <span class="blue">TOP 10 TRADER</span>&rsquo;s trade frequency.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="tab" type="button" role="tab" aria-selected="false" data-tab="2">
+          <span class="tab__label">See live trades from top accounts.</span>
+          <span class="tab__body">
+            <span class="tab__head">
+              <span class="pill pill--white">03</span>
+              <span class="tab__copy"><span class="hi">See live trades from top accounts.</span> Analyze the activity of other traders, spot patterns in their behaviour and find your edge.</span>
+            </span>
+            <span class="tab__prompt">
+              <span class="m1 dim">Prompt:</span>
+              <span class="prompt">Show me the trades of the <span class="blue">LARGEST HOLDERS</span> of <span class="pale">OIL</span> during last 2 hours.</span>
+            </span>
+          </span>
+        </button>
+      </aside>
+
+      <div class="scrollsec__main">
+        <canvas class="scrollsec__canvas" aria-label="Candlestick chart with news, depth and trader overlays"></canvas>
+
+        <!-- 01 — news mapped onto the chart -->
+        <div class="layer layer--news is-on" data-layer="0">
+          <svg class="scrollsec__links" aria-hidden="true"></svg>
+          <div class="scrollsec__cards">
+            <div class="newscol" style="--x:-3%"><article class="newscard"><div class="newscard__h"><div class="newscard__who"><img src="assets/svg/avatar-news.svg" alt="" width="20" height="20"><span>Reuters</span></div><div class="newscard__meta"><span>3h 07m ago</span><img src="assets/svg/x-icon.svg" alt="X" width="16" height="16"></div></div><p>OPEC+ delegates signal no change to output targets ahead of Thursday&rsquo;s meeting. Two members push for a review of compliance.</p></article></div>
+            <div class="newscol" style="--x:21%"><article class="newscard"><div class="newscard__h"><div class="newscard__who"><img src="assets/svg/avatar-news.svg" alt="" width="20" height="20"><span>EIA Weekly Petro&hellip;</span></div><div class="newscard__meta"><span>2h 40m ago</span><img src="assets/svg/x-icon.svg" alt="X" width="16" height="16"></div></div><p>Commercial crude inventories up 3.1M barrels. Gasoline stocks down 1.4M.</p></article><article class="newscard"><div class="newscard__h"><div class="newscard__who"><img src="assets/svg/avatar-news.svg" alt="" width="20" height="20"><span>@zerohedge</span></div><div class="newscard__meta"><span>2h 10m ago</span><img src="assets/svg/x-icon.svg" alt="X" width="16" height="16"></div></div><p>Third straight week the draw came in under consensus. Crude didn&rsquo;t care until today.</p></article></div>
+            <div class="newscol" style="--x:45%"><article class="newscard newscard--hot"><div class="newscard__h"><div class="newscard__who"><img src="assets/svg/avatar-news.svg" alt="" width="20" height="20"><span>Walter Bloomberg</span></div><div class="newscard__meta"><span>1h 14m ago</span><img src="assets/svg/x-icon.svg" alt="X" width="16" height="16"></div></div><p>HEADLINE: US CONSIDERING EASING SANCTIONS ON VENEZUELAN CRUDE EXPORTS, PER OFFICIALS</p></article></div>
+            <div class="newscol" style="--x:69%"><article class="newscard"><div class="newscard__h"><div class="newscard__who"><img src="assets/svg/avatar-news.svg" alt="" width="20" height="20"><span>@oil_flows</span></div><div class="newscard__meta"><span>48m ago</span><img src="assets/svg/x-icon.svg" alt="X" width="16" height="16"></div></div><p>Someone lifted every offer between 71.10 and 71.40. That&rsquo;s the third time this week at that level.</p></article><article class="newscard"><div class="newscard__h"><div class="newscard__who"><img src="assets/svg/avatar-news.svg" alt="" width="20" height="20"><span>Bloomberg Energy</span></div><div class="newscard__meta"><span>22m ago</span><img src="assets/svg/x-icon.svg" alt="X" width="16" height="16"></div></div><p>Officials walk back sanctions timeline, say no decision has been made.</p></article></div>
+          </div>
+        </div>
+
+        <!-- 02 — volume envelope and trade frequency, drawn on the chart canvas -->
+        <div class="layer layer--depth" data-layer="1" aria-hidden="true"></div>
+
+        <!-- 03 — who is trading -->
+        <div class="layer layer--traders" data-layer="2">
+          <span class="trader trader--pin" style="--x:9.8%;--y:32.9%"><img src="assets/img/trader-enzo.png" alt="" width="40" height="40"></span>
+          <span class="trader trader--pin" style="--x:27%;--y:58.6%"><img src="assets/img/trader-enzo.png" alt="" width="40" height="40"></span>
+          <span class="trader trader--card" style="--x:40.6%;--y:34.1%">
+            <img src="assets/img/trader-enzo.png" alt="" width="40" height="40">
+            <span class="trader__txt">
+              <span class="trader__name">Enzo</span>
+              <span class="trader__pos"><span class="hi">Long</span> <span class="dim">10X</span> <span class="up">$2000</span></span>
+            </span>
+          </span>
+        </div>
+
+        <div class="scrollsec__price"><span class="pricetag">4,800</span></div>
+        <div class="scrollsec__axis" aria-hidden="true"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================== FEATURES ========================== -->
+<section class="features">
+  <div class="features__head">
+    <p class="m1 dim">Features</p>
+    <blockquote class="h3 features__quote reveal" data-scramble>&ldquo;GTE is the last trading platform you&rsquo;ll ever need.&rdquo;</blockquote>
+    <figcaption class="features__by">
+      <img src="assets/img/avatar-quote.png" alt="" width="32" height="32" aria-hidden="true">
+      <span>Someone Important</span>
+    </figcaption>
+  </div>
+
+  <div class="features__scroller" data-drag-scroll>
+    <div class="features__rail">
+
+      <article class="fcard fcard--edge">
+        <div class="fcard__head">
+          <span class="pill pill--white">01</span>
+          <p class="fcard__copy"><b>Edge is built on your execution.</b> <span class="dim">Every trade, cancel, and stop modification is logged to contextualize your future setups.</span></p>
+        </div>
+        <div class="fcard__viz fcard__viz--tile" aria-hidden="true">
+          <!-- WebM only, and not fetched until the card is on screen. The still is
+               the fallback: it holds the tile until playback really starts (the
+               film opens on black) and stays put on anything that cannot play
+               VP9. See lazyVideo() in js/app.js. -->
+          <img class="tile__media" src="assets/img/lamella-tile.jpg" alt="">
+          <video class="tile__media tile__video" data-lazy-video muted loop
+                 playsinline preload="none">
+            <source data-src="assets/video/edge-window.webm" type="video/webm">
+          </video>
+        </div>
+      </article>
+
+      <article class="fcard fcard--markets">
+        <div class="fcard__head">
+          <span class="pill pill--white">02</span>
+          <p class="fcard__copy"><b>Unified across exchanges.</b> <span class="dim">Your margin works on every venue. No transfers, no waiting on a bridge.</span></p>
+        </div>
+        <ul class="markets">
+          <li><span class="markets__l"><img src="assets/img/mk-solana.png" alt="" width="32" height="32"><span>Solana</span></span><span class="markets__r">Spot</span></li>
+          <li><span class="markets__l"><img src="assets/img/mk-hyperliquid.png" alt="" width="32" height="32"><span>Hyperliquid</span></span><span class="markets__r">Perps</span></li>
+          <li><span class="markets__l"><img src="assets/img/mk-polymarket.png" alt="" width="32" height="32"><span>Polymarket</span></span><span class="markets__r">Prediction</span></li>
+          <li class="is-soon"><span class="markets__l"><img src="assets/img/mk-robinhood.png" alt="" width="32" height="32"><span>Robinhood</span></span><span class="markets__r">Coming soon</span></li>
+          <li class="is-soon"><span class="markets__l"><img src="assets/img/mk-lighter.png" alt="" width="32" height="32"><span>Lighter</span></span><span class="markets__r">Coming soon</span></li>
+        </ul>
+      </article>
+
+      <article class="fcard fcard--chart">
+        <div class="fcard__head">
+          <span class="pill pill--white">03</span>
+          <p class="fcard__copy"><b>Direct-on-chart execution.</b> <span class="dim">Place, modify, and cancel cross-venue limit orders directly from your charting view.</span></p>
+        </div>
+        <div class="fcard__viz">
+          <canvas data-candles="ghost" aria-label="Chart with resting buy and sell orders"></canvas>
+          <span class="otag otag--sell">Sell <b>$200</b></span>
+          <span class="otag otag--mid">$2,320.72</span>
+          <span class="otag otag--buy">Buy <b>$100</b></span>
+        </div>
+      </article>
+
+      <article class="fcard fcard--pay">
+        <div class="fcard__head">
+          <span class="pill pill--white">04</span>
+          <p class="fcard__copy"><b>Easy deposit.</b> <span class="dim">Start using GTE in just a few clicks with Apple Pay.</span></p>
+        </div>
+        <div class="fcard__viz fcard__viz--pay" aria-hidden="true">
+          <div class="paydots"></div>
+        </div>
+      </article>
+
+      <article class="fcard fcard--keys">
+        <div class="fcard__head">
+          <span class="pill pill--white">05</span>
+          <p class="fcard__copy"><b>Intuitive shortcuts.</b> <span class="dim">Navigate and control GTE fast using your keys.</span></p>
+        </div>
+        <div class="keyboard" data-keyboard aria-hidden="true"></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- =========================== WAITLIST ========================== -->
+<section class="waitlist" id="waitlist">
+  <div class="waitlist__glow" aria-hidden="true"></div>
+
+  <div class="waitlist__head">
+    <p class="m1 waitlist__count reveal">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="hi" data-waitlist-count>227 024</span> traders <span class="dim">on waitlist</span>
+    </p>
+    <h2 class="h3 waitlist__title reveal" data-delay="1" data-scramble>Join waitlist</h2>
+    <form class="field field--wide reveal" data-waitlist data-delay="2" novalidate>
+      <input type="email" name="email" placeholder="you@email.com" autocomplete="email" required aria-label="Email address">
+      <button class="btn btn--orange" type="submit">Send code</button>
+    </form>
+    <p class="field__msg" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- ============================= FAQ ============================= -->
+<section class="faq">
+  <h2 class="faq__title reveal" data-scramble>Frequently asked questions</h2>
+  <div class="faq__list">
+    <details class="acc"><summary><span>What is GTE?</span><img src="assets/svg/chevron-down.svg" alt="" width="20" height="20"></summary><div class="acc__body"><p>GTE is a Global Token Exchange, a platform that enables seamless trading and management of digital assets across multiple markets worldwide.</p></div></details>
+    <details class="acc" open><summary><span>What is GTE?</span><img src="assets/svg/chevron-down.svg" alt="" width="20" height="20"></summary><div class="acc__body"><p>GTE is a Global Token Exchange, a platform that enables seamless trading and management of digital assets across multiple markets worldwide.</p></div></details>
+    <details class="acc"><summary><span>What is GTE?</span><img src="assets/svg/chevron-down.svg" alt="" width="20" height="20"></summary><div class="acc__body"><p>GTE is a Global Token Exchange, a platform that enables seamless trading and management of digital assets across multiple markets worldwide.</p></div></details>
+    <details class="acc"><summary><span>What is GTE?</span><img src="assets/svg/chevron-down.svg" alt="" width="20" height="20"></summary><div class="acc__body"><p>GTE is a Global Token Exchange, a platform that enables seamless trading and management of digital assets across multiple markets worldwide.</p></div></details>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER =========================== -->
+<footer class="foot">
+  <div class="foot__left">
+    <img class="foot__ascii" src="assets/img/ascii-portrait.webp" alt="" aria-hidden="true" width="520" height="1120">
+
+    <div class="foot__top">
+      <img class="foot__logo" src="assets/svg/logo-gte-lg.svg" alt="GTE" width="91" height="32">
+      <p class="m1 foot__motto">Trade fast<br>Win faster</p>
+    </div>
+
+    <div class="foot__bottom">
+      <img class="foot__mark" src="assets/svg/edge-e-lg.svg" alt="" width="64" height="43" aria-hidden="true">
+      <div class="foot__legal">
+        <div class="foot__pills"><span class="pill pill--white">C</span><span class="pill pill--white">2026</span></div>
+        <p class="m1">Liquid Labs LLC</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot__right">
+    <nav class="foot__links" aria-label="Social">
+      <a href="#" class="tlink">X <img src="assets/svg/arrow-up-right.svg" alt="" width="16" height="16"></a>
+      <a href="#" class="tlink">Linkedin <img src="assets/svg/arrow-up-right.svg" alt="" width="16" height="16"></a>
+      <a href="#" class="tlink">Telegram <img src="assets/svg/arrow-up-right.svg" alt="" width="16" height="16"></a>
+    </nav>
+    <nav class="foot__links foot__links--2" aria-label="Legal">
+      <a href="#" class="tlink">Terms &amp; Conditions <img src="assets/svg/arrow-up-right.svg" alt="" width="16" height="16"></a>
+      <a href="#" class="tlink">Privacy policy <img src="assets/svg/arrow-up-right.svg" alt="" width="16" height="16"></a>
+    </nav>
+    <nav class="foot__links foot__links--3" aria-label="Resources">
+      <a href="#" class="tlink">Docs <img src="assets/svg/arrow-up-right.svg" alt="" width="16" height="16"></a>
+      <a href="#" class="tlink">Link <img src="assets/svg/arrow-up-right.svg" alt="" width="16" height="16"></a>
+    </nav>
+    <div class="foot__ticker" data-ticker data-variant="foot">
+      <div class="tickerbar__track"></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js?v=27" defer></script>
+</body>
+</html>
